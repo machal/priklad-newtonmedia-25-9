@@ -1,0 +1,26 @@
+Detail článku
+============
+
+1. Logo
+2. Navigace - 4 položky
+3. Článek
+  - Nadpis
+  - Anotace
+  - Text prokládaný fotografiemi
+4. Fotogalerie - 6 fotek
+5. Podobné články - 3
+  - Nadpis
+  - Anotace
+6. Statistiky zápasu
+  - Výsledek
+  - Góly a jejich autoři
+7. Tabulka pořadí ligy
+8. Mapa místa utkání
+9. Patička
+
+
+
+Úvodní strana
+=============
+
+… …
