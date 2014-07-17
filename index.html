@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="lib/fancybox/jquery.fancybox.css">
     <script src="js/respond.js"></script>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
   </head>
 
   <body>
@@ -55,7 +57,13 @@
 
         <p class="photo">
           <a class="fancybox" href="img/plzen_1.jpg">
-            <img src="img/plzen_1.jpg" alt="Plzeň" width="540" height="304">
+            <span data-picture data-alt="Plzeň">
+              <span data-src="img/plzen_1_small.jpg"></span>
+              <span data-src="img/plzen_1.jpg" data-media="(min-width: 481px)"></span>
+              <noscript>
+                  <img src="img/plzen_1.jpg" alt="Plzeň">
+              </noscript>
+              </span>
           </a>
         </p>
 
@@ -212,7 +220,7 @@
           <thead>
             <tr>
               <th class="position">Poř.</th>
-              <th class="team" colspan="2">Tým</th>
+              <th class="team">Tým</th>
               <th class="matches"><span title="Počet utkání celkem">Z</span></th>
               <th class="matches-win"><span title="Výhra">V</span></th>
               <th class="matches-draw"><span title="Remíza">R</span></th>
@@ -235,7 +243,7 @@
             </tr>
             <tr>
               <td class="position">2</td>
-              <td class="team-logo"><img src="img/icons/atletico_25.png" alt="Atlético" height="25"></td>
+              <td class="team-logo"><img src="img/icons/atletico.svg" onerror="this.onerror=null; this.src='img/icons/atletico_25.png'" alt="Atlético" height="25"></td>
               <td class="team-name">Atlético</td>
               <td class="matches"><span title="Počet utkání celkem">6</span></td>
               <td class="matches-win"><span title="Výhra">4</span></td>
@@ -288,6 +296,7 @@
 
     </div><!-- .container -->
 
+    <script src="js/picturefill.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="lib/fancybox/jquery.fancybox.pack.js"></script>
     <script src="js/index.js"></script>

@@ -416,9 +416,9 @@ a {
   max-width: 100%;
   height: auto;
 }
-/* 
+/*
 
---- Tabulka --- 
+--- Tabulka ---
 
 */
 table {
@@ -442,6 +442,14 @@ th img {
 }
 .table-order td.points {
   text-align: right;
+}
+@media screen and (max-width: 319px) {
+  .team-logo,
+  .matches-draw,
+  .matches-win,
+  .matches-loose {
+    display: none;
+  }
 }
 .map {
   position: relative;
