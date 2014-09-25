@@ -4,8 +4,6 @@
 
 */
 
-@container-width: 980px;
-
 /* Sedive pozadi stranky */
 
 body {
@@ -15,7 +13,7 @@ body {
 /* Layout  */
 
 .container {
-  max-width: @container-width;
+  width: 980px;
   position: relative;
   margin: 16px auto;
   background: #fff;
@@ -24,22 +22,22 @@ body {
 }
 
 .logo {
-  padding: 30px percentage(30px/@container-width);
+  padding: 30px 30px;
   margin: 0;
 }
 
 .content {
   float: left;
-  padding-left: percentage(30px/@container-width);
-  padding-right: percentage(30px/@container-width);
-  width: percentage(540px/@container-width);
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 540px;
   margin-bottom: 48px;
 }
 
 .side {
   float: right;
-  padding-left: percentage(30px/@container-width);
-  padding-right: percentage(30px/@container-width);
-  width: percentage(320px/@container-width);
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 320px;
   margin-bottom: 48px;
 }
