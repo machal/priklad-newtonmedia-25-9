@@ -464,6 +464,11 @@ th img {
     display: none;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .team-logo {
+    display: none;
+  }
+}
 /*
 
 --- Navigace ---
@@ -528,6 +533,132 @@ b .nav-item,
   }
   .nav li:first-child .nav-item {
     border-left: none;
+  }
+}
+/*
+
+--- Fotogalerie ---
+
+*/
+.gallery:before,
+.gallery:after {
+  content: " ";
+  display: table;
+}
+.gallery:after {
+  clear: both;
+}
+.gallery-item {
+  float: left;
+  width: 170px;
+  margin: 0 15px 15px 0;
+}
+.gallery-item img {
+  width: 170px;
+}
+.gallery-item a {
+  margin-bottom: 4px;
+}
+.gallery-item.last {
+  margin-right: 0;
+}
+/*
+
+--- Paticka webu ---
+
+*/
+@media screen {
+  .foot {
+    margin-top: 48px;
+    clear: both;
+    padding: 16px 30px;
+    background-color: #ccc;
+    color: #999;
+  }
+  .foot p {
+    margin-bottom: 0;
+  }
+}
+/*
+
+--- Hlavicka webu ---
+
+*/
+.head {
+  background: url('../img/sportsmen_full.png') no-repeat right center;
+}
+/* 
+
+--- Fotogalerie --- 
+
+*/
+.photo a,
+.photo img {
+  display: block;
+}
+/*
+
+--- Podobne clanky ---
+
+*/
+.similar-articles {
+  list-style-type: none;
+  margin: 0 0 24px;
+  padding: 0;
+}
+.similar-articles li {
+  margin: 0 0 12px 0;
+  padding: 0;
+}
+.similar-articles h3,
+.similar-articles p {
+  margin: 0;
+  padding: 0;
+}
+/* Odkazy pod clankem */
+/*  
+	<h2 class="similar-articles-link">
+	  <a href="podobne-clanky.html" data-replace="podobne-clanky.html" data-media="(min-width: 600px)">Podobné články</a>
+	</h2>
+*/
+.similar-articles-link {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  /*
+
+--- Layout - pro siroke displeje ---
+
+*/
+  /* Sedive pozadi stranky */
+  body {
+    background: #ccc;
+  }
+  /* Layout  */
+  .container {
+    max-width: 980px;
+    position: relative;
+    margin: 16px auto;
+    background: #fff;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
+  }
+  .logo {
+    padding: 30px 3.061224489795918%;
+    margin: 0;
+  }
+  .content {
+    float: left;
+    padding-left: 3.061224489795918%;
+    padding-right: 3.061224489795918%;
+    width: 55.10204081632652%;
+    margin-bottom: 48px;
+  }
+  .side {
+    float: right;
+    padding-left: 3.061224489795918%;
+    padding-right: 3.061224489795918%;
+    width: 32.6530612244898%;
+    margin-bottom: 48px;
   }
 }
 /*# sourceMappingURL=index.css.map */

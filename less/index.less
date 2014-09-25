@@ -1,5 +1,7 @@
 /* Sports Weekly stylopis */
 
+@largeUp: ~"screen and (min-width: 768px)";
+
 // Knihovny
 @import "core/helpers.less";
 
@@ -11,3 +13,13 @@
 
 // UI komponenty
 @import "components/nav.less";
+@import "components/gallery.less";
+@import "components/foot.less";
+@import "components/head.less";
+@import "components/photo.less";
+@import "components/similar-articles.less";
+
+// Layout
+@media @largeUp {
+  @import "layout/layout.less";
+}
